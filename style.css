@@ -1,6 +1,6 @@
 :root {
-  --primary-color: #666;
-  --secondary-color: #f4f4f4;
+  --primary-color: #1a5580;
+  --secondary-color: #267fbf;
 }
 * {
   margin: 0;
@@ -10,10 +10,12 @@
 }
 
 body {
-  font-family: "Times New Roman", Times, serif;
+  font-family: "Roboto", sans-serif;
+  background: var(--primary-color);
   margin-bottom: 2rem;
   margin: 0 auto;
   max-width: 65%;
+  color: #f4f4f4;
 }
 
 /* utilities */
@@ -27,9 +29,27 @@ body {
   padding: 2rem 0;
 }
 
+a {
+  text-decoration: none;
+  color: #ff8833;
+}
+
+a:hover {
+  color: var(--secondary-color);
+}
+
 .sect {
+  display: grid;
+  grid-template-columns: 1fr 2fr;
+  column-gap: 3rem;
   margin: 0 2rem;
-  /* padding: 0 0.5rem; */
+}
+
+.sect-lead {
+  border-right: #ccc 2px solid;
+}
+
+.sect-detail {
 }
 
 .title-1 {
@@ -64,15 +84,34 @@ body {
 
 /* personal info */
 #personal-info {
-  padding: 1rem 0;
+  margin: 0 -6rem;
   display: flex;
-  flex-direction: column;
+  /* flex-direction: column; */
   align-items: center;
+  border: 1px solid red;
 }
 
 #personal-info ul {
   list-style: none;
   text-align: center;
+}
+
+.heading {
+  height: 100vh;
+}
+
+.h-image,
+.h-text {
+  padding: 0 2rem;
+}
+
+.h-image {
+  border-right: #ccc 2px solid;
+}
+
+img {
+  /* margin: 1rem; */
+  width: 100%;
 }
 
 /* eduction */
