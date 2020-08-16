@@ -119,23 +119,32 @@ a:hover {
 }
 
 .h-image {
+  flex: 1;
   border-right: var(--secondary-color) 2px solid;
 }
 
 .h-text {
+  flex: 1;
+  padding-right: 0;
   text-align: left;
 }
 
 img {
   /* margin: 1rem; */
   position: relative;
-  width: 70%;
-  left: 7rem;
+  width: 100%;
 }
 
 /* main */
-main {
-}
+/* .split {
+  position: sticky;
+  background: var(--secondary-color);
+  width: 2px;
+  height: 100px;
+  top: 0;
+  left: 562px;
+  z-index: -1;
+} */
 
 /* eduction */
 
@@ -164,23 +173,39 @@ main {
     max-width: 75%;
     padding: 1rem 2rem;
   }
+  /* navbar */
+
+  .nav {
+    display: none;
+  }
+
   /* head */
   #personal-info .heading {
+    justify-content: center;
+    align-content: center;
     flex-direction: column;
     /* margin: auto; */
   }
 
   .h-image {
-    padding: 0.5rem 6rem;
+    padding: 0.5rem 2rem;
     border: none;
   }
 
   img {
-    width: 95%;
+    position: static;
+    width: 100%;
   }
 
   .h-text {
+    padding: 0;
     border-top: 2px solid var(--secondary-color);
+    text-align: center;
+  }
+
+  #personal-info h2,
+  #personal-info ul li {
+    margin-bottom: 0;
   }
 
   /* sections */
@@ -190,7 +215,8 @@ main {
   }
 
   .sect:first-child {
-    margin-top: 2rem;
+    padding-top: 0;
+    margin-top: 0;
   }
 
   .sect-lead {
