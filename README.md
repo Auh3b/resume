@@ -1,3 +1,3 @@
 ## Resume
 
-A a simple resume site 
+A simple resume site 
